@@ -9,7 +9,18 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/common.css" />
 	<script src="js/jquery-1.9.0.min.js"></script>
-<!-- 	<script src="js/slider.js"></script> -->
+<!--<script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+	<link href="css/js/jquery.bxslider.css" rel="stylesheet" />
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+		$(function() {
+	   		$('.pic-list').bxSlider();
+		});
+
+		$(document).ready(function(){
+			$('.newsslidercontrol').bxSlider();
+		});
+	</script>
 </head>
 
 <body>
@@ -27,7 +38,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<div class="topmenu menu">
 				<ul>
 					<li><a href="Homepage.html" class="current">Home</a></li>
-					<li><a href="#">Actuee</a></li>
+					<li><a href="Actueel.html">Actuee</a></li>
 					<li><a href="#">Voorwaarden</a></li>
 					<li><a href="#">Veel gestelde vragen</a></li>
 				</ul>
@@ -55,113 +66,77 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<div id="main" class="global-width clearfix">
 		<!-- content -->
 		<div class="content">
-			<!-- -->
-			<!-- <div>
-			</div> -->
-			<!-- / -->
-			<!-- back -->
-			<!-- <div class="breadcrumbs">
-				<ul>
-					<li>U bevind zich hier<span>></span></li>
-					<li class="current">Home</li>
-				</ul>
-			</div> -->
-			<!-- / back -->
-			<!-- article -->
-			<!-- <div class="article">
-				<div class="block block-content">
-					<h1 class="title">WELKOM<span> BIJ FACTA</span></h1>
-					<div class="passage">
-						<span>
-							Solorendellut mo es ipicill essundi scipidit, sit aut occuptatum fuga. Itatem doluptaquo omniaspid quiaspi enduciature pedis dis est occaere prae. Itas assunti busapeditio inus maionse quisci ium volorro iduci ut volesti sit ide omnimus.
-						</span>
-						<p>
-							Itatur aspienis excerum rerunt atiati occusdaero doluptati ut quiam conserc hillacius, ipsam, conse eaque voluptium qui aut rerspiciisi diantia veliatest fugitibus rest aut etur solupta tquias re ditatis aut ut et venda cones aceaquam et qui blandi
-							re, as enimet, volest, untinveri beres inulliquam fuga. Ad utemporro doluptis magnat aut excearit eum debit ressit aut velent. Endit qui dolene conetur min non nonsectur solupid ma nulpa con cuptiatur, iur autem quatem quidunt offictur.
-						</p>
-					</div>
-				</div>
-			</div> -->
-			<!-- / article -->
 			<div class="block block-slider clearfix">
-				<div class="slider-pic">
-					<ul class="pic-list">
-						<li><a href=""><img src="upload/slider-pic-1.png" /></a></li>
-						<!-- <li><a href=""><img src="upload/slider-pic-2.png" /></a></li>
-						<li><a href=""><img src="upload/slider-pic-3.png" /></a></li> -->
-					</ul>
-				</div>
-				<div class="slider-control clearfix">
+				<ul class="pic-list">
+					<li><a href=""><img src="upload/slider-pic-1.png" /></a></li>
+					<li><a href=""><img src="upload/slider-pic-2.png" /></a></li>
+					<li><a href=""><img src="upload/slider-pic-3.png" /></a></li>
+				</ul>
+			<!--<div class="slider-control clearfix">
 					<ul class="control-list">
 						<li>
 							<a href="" class="active">
 								<span class="active">icoon</span>
-								<h1 class="title">VAN AFVAL NAAR ENERGIE</h1>
+								<h4 class="title">VAN AFVAL NAAR ENERGIE</h4>
 								<span>Duurzaam</span>
 							</a>
 						</li>
 						<li>
 							<a href="">
 								<span>icoon</span>
-								<h1 class="title">MVO / CO2 PRESTATIELADDER</h1>
+								<h4 class="title">MVO / CO2 PRESTATIELADDER</h4>
 								<span>Advies op maat</span>
 							</a>
 						</li>
 						<li>
 							<a href="">
 								<span>icoon</span>
-								<h1 class="title">WAT LEVERT HET OP?</h1>
+								<h4 class="title">WAT LEVERT HET OP?</h4>
 								<span>Besparen</span>
 							</a>
 						</li>
 					</ul>
-				</div>
-				<div class="slider-prev">
-					<a href=""></a>
-				</div>
-				<div class="slider-next">
-					<a href=""></a>
-				</div>
+				</div> -->
 			</div>
 			<div class="teaser clearfix">
 				<div class="block teaser-box">
 					<a href="" class="clearfix">
-						<div class="brief">
-							<h1 class="title style color1">GROENE ENERGIE</h1>
+						<span class="brief">
+							<h4 class="title style color1">GROENE ENERGIE</h4>
 							<p>Stroom van GP Groot Energie aantrekkelijk geprijsd.</p>
-						</div>
-						<div class="detail">
+						</span>
+						<span class="detail">
 							<span>Gemiddeld p/m</span>
 							<span class="price style color1">€ 124,-</span>
 							<span class="button style color1">BESTELLEN</span>
-						</div>
+						</span>
 					</a>
 				</div>
 				<div class="block teaser-box">
 					<a href="" class="clearfix">
-						<div class="brief">
-							<h1 class="title style color2">MVO SCAN</h1>
+						<span class="brief">
+							<h4 class="title style color2">MVO SCAN</h4>
 							<p>Ook maatschappelijk verantwoord ondernemen? Doe de MVO scan.</p>
-						</div>
-						<div class="detail">
+						</span>
+						<span class="detail">
 							<span>Nu voor</span>
 							<span class="price style color2">€ 209,-</span>
 							<span class="button style color2">AANVRAGEN</span>
-						</div>
+						</span>
 					</a>
 				</div>
 				<div class="block teaser-box">
 					<a href="" class="clearfix">
-						<div class="brief">
-							<h1 class="title style color3">OVERSTAPPEN</h1>
+						<span class="brief">
+							<h4 class="title style color3">OVERSTAPPEN</h4>
 							<p>Overstappen naar GP Groot Energie kost u geen energie.</p>
 							<p class="spe">Het enige wat u hoeft te doen is uw gegevens achter laten en wij regelen de rest.</p>
-						</div>
-						<div class="detail third">
+						</span>
+						<span class="detail third">
 							<span></span>
 							<span class="price style color3"></span>
 							<span class="button style color3">OVERSTAPPEN</span>
-						</div>
+						</span>
 					</a>
 				</div>
 			</div>
@@ -170,7 +145,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<!-- sidebar -->
 		<div class="sidebar">
 			<div class="block block-login">
-				<h1 class="title">INLOGGEN</h1>
+				<h4 class="title">INLOGGEN</h4>
 				<form class="login-form" action="" method="">
 					<p>
 						<input id="naam" type="text" name="naam" placeholder="Gebruikersnaam" />
@@ -178,7 +153,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<p>
 						<input id="wachtwoord" type="password" name="wachtwoord " placeholder="Wachtwoord" />
 					</p>
-					<button class="login-button" type="submit">></button>
+					<button class="login-button" type="submit">login</button>
 				</form>
 				<div class="login-a">
 					<ul>
@@ -188,30 +163,30 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 				</div>
 			</div>
 			<div class="block block-submenu">
-				<h1 class="title">ZELF REGELEN</h1>
+				<h4 class="title">ZELF REGELEN</h4>
 				<ul>
 					<li>
-						<a href="#.html" class="submenu">Uitleg jaarafrekening<span class="arrow">></span></a>
+						<a href="#.html" class="submenu">Uitleg jaarafrekening</a>
 					</li>
 					<li>
-						<a href="#.html" class="submenu">Meterstanden doorgeven<span class="arrow">></span></a>
+						<a href="#.html" class="submenu">Meterstanden doorgeven</a>
 					</li>
 					<li>
-						<a href="#.html" class="submenu">Verhuizing doorgev<span class="arrow">></span></a>
+						<a href="#.html" class="submenu">Verhuizing doorgev</a>
 					</li>
 					<li>
-						<a href="#.html" class="submenu">Termijnbedrag wijzigen<span class="arrow">></span></a>
+						<a href="#.html" class="submenu">Termijnbedrag wijzigen</a>
 					</li>
 					<li>
-						<a href="#.html" class="submenu">Profiel wijzigen<span class="arrow">></span></a>
+						<a href="#.html" class="submenu">Profiel wijzigen</a>
 					</li>
 				</ul>
 			</div>
 			<div class="block block-button">
-				<button type="submit">klant worden<span>></span></button>
+				<a href="">klant worden</a>
 			</div>
 			<div class="block block-call">
-				<h1 class="title">TERUGGEBELD WORDEN</h1>
+				<h4 class="title">TERUGGEBELD WORDEN</h4>
 				<form class="call-form" action="" method="">
 					<p>
 						<input id="uwnaam" type="text" name="uwnaam" placeholder="Uw naam" />
@@ -219,11 +194,11 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					<p>
 						<input id="uwtel" type="text" name="uwtel" placeholder="Uw telefoonnummer" />
 					</p>
-					<button class="call-button" type="submit">></button>
+					<button class="call-button" type="submit">call</button>
 				</form>
 			</div>
 			<!-- <div class="block block-social clearfix">
-				<h1 class="title">VOLG ONS</h1>
+				<h4 class="title">VOLG ONS</h4>
 				<ul class="social-a">
 					<li><a href="#"><img src="images/linkedin.png" /></a></li>
 					<li><a href="#"><img src="images/twitter.png" /></a></li>
@@ -235,32 +210,30 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 		<!-- main bottom -->
 		<div class="main-bottom">
 			<div class="block block-faq">
-				<h1 class="title">VEEL GESTELDE VRAGEN</h1>
-				<span><a href=""><span>Alle vragen</span>></a></span>
+				<h4 class="title">VEEL GESTELDE VRAGEN</h4>
+				<a href="">Alle vragen</a>
 				<ul>
-					<li><a href="">Wat is de precieze werkwijze van GP Groot Energie?<span class="arrow">></span></a></li>
-					<li><a href="">Wat zijn mijn voordelen als ik overstap naar GP Groot Energie?<span class="arrow">></span></a></li>
-					<li><a href="">Kan ik makkelijk overstappen naar GP Groot Energie?<span class="arrow">></span></a></li>
-					<li><a href="">Hoe werkt de MVO scan?<span class="arrow">></span></a></li>
-					<li><a href="">Hoe kan ik snel klimmen op de CO2 prestatieladder?<span class="arrow">></span></a></li>
-					<li><a href="">Wat houdt 100% groene stroom in?<span class="arrow">></span></a></li>
+					<li><a href="">Wat is de precieze werkwijze van GP Groot Energie?</a></li>
+					<li><a href="">Wat zijn mijn voordelen als ik overstap naar GP Groot Energie?</a></li>
+					<li><a href="">Kan ik makkelijk overstappen naar GP Groot Energie?</a></li>
+					<li><a href="">Hoe werkt de MVO scan?</a></li>
+					<li><a href="">Hoe kan ik snel klimmen op de CO2 prestatieladder?</a></li>
+					<li><a href="">Wat houdt 100% groene stroom in?</a></li>
 				</ul>
 			</div>
 			<div class="block block-newsslider">
-				<a href="">
-					<h1 class="title">ACTUEEL</h1>
+				<h4 class="title">ACTUEEL</h4>
+				<a href="" class="clearfix">
 					<ul class="newsslidercontrol">
-						<li class="current">1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
+						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
 					</ul>
-					<span class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</span>
-					<span class="second">></span>
 				</a>
 			</div>
 			<div class="block block-tweets">
-				<h1 class="title">LAATSTE TWEETS</h1>
+				<h4 class="title">LAATSTE TWEETS</h4>
 				<div class="tweets-box">
 					<span>Geplaatst: 12-05-2012</span>
 					Ebit oditatatio magnimaxim sunt, sunt iumquib usdae. De ipsum qui desequiam, occatur, <span class="second">sit vetur sant.</span>
@@ -283,11 +256,11 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<!-- footer -->
 	<div id="footer">
 		<div class="global-width clearfix">
-			<div class="logo-footer">
+			<span class="logo-footer">
 				<a href="#.html">
 					<img src="images/logo-footer.png" />
 				</a>
-			</div>
+			</span>
 			<div class="contactinformation">
 				<ul>
 					<li>GP Groot Energie</li>
