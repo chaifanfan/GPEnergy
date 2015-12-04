@@ -1,0 +1,119 @@
+.content{
+    p{
+        margin-bottom: 12px;
+
+        &.box{
+            margin:9px 0 !important;
+
+            label{
+                width: auto !important;
+                line-height: 33px;
+                margin-top: 0;
+
+                &:first-child{
+                    width: 97px !important;
+                }
+            }
+        }
+
+        &.spe{
+            input[type="text"]{
+                margin-right: 7px;
+                float: left;
+                width: 106px !important;
+            }
+
+            input.short{
+                width: 43px !important;
+            }
+        }
+    }
+
+    label{
+        position: relative;
+        float: left;
+        padding-right: 10px;
+        width: 97px;
+        margin-top: 8px;
+
+        input[type="radio"]{
+            margin-right: 6px;
+            opacity: 0;
+        }
+
+        i{
+            background: url('images/radio-unchecked.png') no-repeat;
+            width: 13px;
+            display: inline-block;
+            height: 13px;
+            position: absolute;
+            top: 8px;
+            left: 0px;
+        }
+
+        input:checked + i {
+            background: url('images/radio-checked.png') no-repeat;
+        }
+    }
+
+    input[type="text"]{
+        padding: 0 2px;
+        border-top: 1px #a0a0a0 solid;
+        border-left: 1px #a0a0a0 solid;
+        background-color: #e3e3e3;
+        width: 364px;
+        height: 32px;
+    }
+
+    button{
+        float: right;
+        padding: 0 28px 5px 0;
+        font-family: Calibri;
+        font-size: 24px;
+        font-weight: bold;
+        color: #ec6707;
+        line-height: 28px;
+        background: url('images/bigbutton-arrow-red.png') no-repeat right;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.85;
+        }
+    }
+
+    .block-contact-open{
+        position: relative;
+        margin-bottom: 12px;
+        padding: 30px 20px 22px 78px;
+        color: #464646;
+        line-height: 18px;
+
+        .introductiontext{
+            margin-bottom: 46px;
+        }
+
+        .contact-form{
+            margin-bottom: 105px;
+
+            p{
+                &:first-child{
+                    margin-bottom: 0;
+                }
+            }
+
+            button{
+                margin-top: 19px;
+            }
+        }
+
+        img{
+            margin-bottom: 21px;
+        }
+
+        .route-form{
+            button{
+                margin-top: -32px;
+            }
+        }
+    }
+}

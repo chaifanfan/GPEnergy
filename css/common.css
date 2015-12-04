@@ -1,19 +1,5 @@
 /* header main footer */
-/*.button {
-    position: absolute;
-    right: -2px;
-    bottom: -3px;
-    padding: 0 18px 0 22px!important;
-    width: 38px;
-    height: 19px;
-    background: url(images/sprite.png) no-repeat -38px -215px;
-    line-height: 20px;
-    font-size: 11px!important;
-    color: #fff!important;
-    text-decoration: none;
-    cursor: pointer;
-    z-index: 1
-}*/
+
 
 /**********************************************************header**********************************************************/
 #header {
@@ -144,40 +130,30 @@
 
 
 #main .content .block-slider .control-list li{
-    margin-left: 1px;
+    float: left;
+    width: 33.3333%;
 }
-#main .content .block-slider {
-    background: none;
-}
+
 #main .content .block-slider .control-list li a{
+    display: inline-block;
     margin-left: 1px;
     padding: 16px 0 17px 12px;
-    float: left;
-    width: 227px;
     background: #fff;
     font-size: 14px;
     font-weight: bold;
     color: #1c1c1c;
+    text-decoration: none;
 }
 #main .content .block-slider .control-list li:first-child a{
-    margin-left: -1px;
+    margin-left: 0px;
 }
 #main .content .block-slider .control-list li a:hover,
 #main .content .block-slider .control-list li a.active{
     background: #dddbdb;
 }
-#main .content .block-slider .control-list li span{
+
+#main .content .block-slider .control-list li img{
     float: left;
-}
-#main .content .block-slider .control-list li span:first-child{
-    width: 39px;
-    height: 39px;
-    background: url("images/icoon-gray.png");
-    text-indent: -9999px;
-}
-#main .content .block-slider .control-list li a:hover span:first-child,
-#main .content .block-slider .control-list li span.active{
-    background: url("images/icoon-white.png");
 }
 #main .content .block-slider .control-list li .title{
     float: left;
@@ -186,7 +162,7 @@
     font-weight: bold;
 }
 #main .content .block-slider .control-list li .title,
-#main .content .block-slider .control-list li span:last-child{
+#main .content .block-slider .control-list li span{
     margin-left: 12px;
 }
 #main .content .block-slider .control-list li .title{
@@ -313,18 +289,14 @@
 }
 
 
-#main .content .article{
+#main .content .block-article{
     margin-bottom: 12px;
-    padding: 30px 28px 40px 21px;
-    background: #fff;
-}
-#main .content .article .block-article{
-    margin-bottom: 0;
-    padding-left: 62px;
-    background: url("images/spinarrow.png") no-repeat;
+    padding: 30px 28px 40px 83px;
+    background: #fff url("images/spinarrow.png") no-repeat 2.8% 5%;
+    color: #464646;
     line-height: 18px;
 }
-#main .content .article .block-article .pagetitle{
+#main .content .pagetitle{
     margin-bottom: 14px;
     display: inline-block;
     width: 333px;
@@ -333,26 +305,27 @@
     color: #ec6707;
     line-height: 24px;
 }
-#main .content .article .block-article .subtitle{
+#main .content .block-article .subtitle{
     font-size: 14px;
     font-weight: bold;
     color: #ec6707;
 
 }
-#main .content .article .block-article .fancybox{
+#main .content .block-article .fancybox{
     float: right;
 }
-#main .content .article .block-article p{
+#main .content .block-article p{
     margin-bottom: 20px;
     font-size: 13px;
 }
-#main .content .article .block-article p:first-child{
+#main .content .block-article p:first-child{
     margin-bottom: 30px;
     font-family: Myriad Pro;
     font-size: 16px;
+    color: #000;
     line-height: 24px;
 }
-#main .content .article .block-article p:last-child{
+#main .content .block-article p:last-child{
     margin-bottom: 0;
 }
 
@@ -370,11 +343,9 @@
     text-decoration: none;
 }
 #main .content .block-item .other-news-item:hover{
+    margin-top: -1px;
     background: #ebeced;
     opacity: 0.85;
-}
-#main .content .block-item .other-news-item:hover .item{
-    border-bottom: none;
 }
 #main .content .block-item .other-news-item .item{
     display: block;
@@ -431,6 +402,62 @@
 }
 #main .content .block-item .pager a.pager-button.disabled{
     cursor: default;
+}
+
+
+#main .content .block-item-open{
+    padding: 34px 21px 24px 80px;
+}
+#main .content .block-item-open .title{
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 30px;
+    color: #ec6707;
+    font-weight: bold;
+    line-height: 30px;
+}
+#main .content .block-item-open .link{
+    float: right;
+    line-height: 0;
+}
+#main .content .block-item-open .style{
+    font-size: 13px;
+    color: #878787;
+    line-height: 18px;
+}
+#main .content .block-item-open .item-detail{
+    margin: 34px 0 32px;
+}
+#main .content .block-item-open .item-detail p{
+    font-family: Calibri;
+    font-size: 16px;
+    color: #000;
+    line-height: 24px;
+}
+#main .content .block-item-open .item-article{
+    padding-left: 70px;
+    font-size: 13px;
+    color: #464646;
+    line-height: 18px;
+}
+#main .content .block-item-open .item-article p{
+    margin-top: 24px;
+}
+#main .content .block-item-open .item-article img{
+    margin-left: 32px;
+    float: right;
+}
+#main .content .block-item-open .link .back{
+    margin-left: 3px;
+    padding: 4px 8px 3px;
+    float: right;
+    background: #ec6707;
+    font-family: Calibri;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+    text-decoration: none;
 }
 /**************************************** /content**************************************/
 /****************************************sidebar**************************************/
@@ -612,10 +639,10 @@
     color: #464646;
     text-decoration: none;
 }
-#main .main-bottom .block-faq a:hover{
+#main .main-bottom .block-faq ul a:hover{
     background: url("images/ul-arrow-black.png") no-repeat 97%;    
 }
-#main .main-bottom .block-faq a:hover{
+#main .main-bottom .block-faq ul a:hover{
     color: #000;
 }
 
@@ -681,22 +708,19 @@
 #main .main-bottom .block-tweets .tweets-box:first-child{
     margin-top: 21px;
 }
-#main .main-bottom .block-tweets .tweets-box .pos{
+
+#main .main-bottom .block-tweets .tweets-box a{
     margin:7px 0 11px;
+    padding: 0 28px 0 8px;
     float: right;
-}
-#main .main-bottom .block-tweets .tweets-box button{
-    margin-right: 2px;
-    padding: 0 5px;
-    float: left;
     height: 21px;
-    background: #32ccfe;
+    background: #32ccfe url("images/twitter.png") no-repeat center right;
     font-family: Calibri;
     font-size: 14px;
     font-weight: bold;
     line-height: 18px;
     color: #fff;
-    text-align: center;
+    text-decoration: none;
     cursor: pointer;
 }
 #main .main-bottom .block-tweets .tweets-box img{

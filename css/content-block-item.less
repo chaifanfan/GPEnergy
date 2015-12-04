@@ -1,0 +1,108 @@
+.content{
+    .block-item{
+        margin-bottom: 20px;
+        padding: 20px 0 32px 0;
+
+        .other-news-item{
+            padding: 19px 23px 0 80px;
+            display: block;
+            font-size: 13px;
+            color: #464646;
+            line-height: 18px;
+            text-decoration: none;
+
+            &:hover{
+                margin-top: -1px;
+                background: #ebeced;
+                opacity: 0.85;
+            }
+
+            .item{
+                display: block;
+                padding-bottom: 19px;
+                border-bottom: 1px #e8e8e8 solid;
+
+                .item-image{
+                    margin-right: 20px;
+                    float: left;
+                }
+
+                .item-detail {
+                    .title{
+                        margin-bottom:18px;
+                        font-size: 20px;
+                    }
+
+                    span{
+                        &.time{
+                            color: #878787;
+                        }
+
+                        &.button{
+                            margin-top: -22px;
+                        }
+                    }
+
+                    p{
+                        padding-right: 65px;
+                    }
+                }
+            }
+        }
+
+        .pager{
+            margin-top: 29px;
+            text-align: center;
+
+            a{
+                line-height: 18px;
+                text-decoration: none;  
+
+                &.pager-button{
+                    font-family: Calibri;
+                    font-size: 14px;
+                    color: #d1d1d1;
+
+                    &.previous{
+                        margin-right: 4px;
+                    }
+
+                    &.next{
+                        margin-left: 6px;
+                    }
+
+                    &.disabled{
+                        cursor: default;
+                    }
+                }
+
+                &.pager-num{
+                    margin-left: 2px;
+                    padding: 4px 7px;
+                    background: #d1d1d1;
+                    color: #fff;
+
+                    &:hover{
+                        background: #ec6707;
+                    }
+
+                    &.current{
+                        //.content .block-item .pager a.pager-num:hover;
+                        background: #ec6707;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block-item a .item-detail span.button{
+    padding: 3px;
+    float: right;
+    background: #ec6707;
+    font-family: Calibri;
+    font-weight: bold;
+    color: #fff;
+    line-height: 14px;
+    cursor: pointer;
+}
