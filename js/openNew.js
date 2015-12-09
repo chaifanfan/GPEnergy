@@ -21,7 +21,7 @@ function openNew(){
                 oMask.id="mask";
                 oMask.style.height=sHeight+"px";
                 oMask.style.width=sWidth+"px";
-                document.getElementById("block-faq-open").appendChild(oMask);
+                document.body.appendChild(oMask);
             var oPopup=document.createElement("div");
                 oPopup.id="popup";
                 oPopup.innerHTML="<span id='close'>SLUIT</span><h1 class='pagetitle'>Helaas was dit niet het antwoord op uw vraag.</h1><p>Hier houdt onze service natuurlijk niet op. Uiteraard kunnen we u een passend antwoord geven. Daarvoor hoeft u alleen even uw gegevens achter te laten en we bellen u direct terug.</p><form class='popup-form'><p><label for='Bedrijfsnaam'>Bedrijfsnaam</label><input id='Bedrijfsnaam' type='text'></input></p><p class='box clearfix'><label for='Aanhef'>Aanhef</label><label for='Dhr'><input id='Dhr' type='radio' value='Dhr.' name='Aanhef'></input>Dhr.<i></i></label><label for='Mevr'><input id='Mevr' type='radio' checked='checked' value='Mevr.'' name='Aanhef'></input>Mevr.<i></i></label></p><p><label for='Naam'>Naam</label><input id='Naam' type='text'></input></p><p><label for='Telefoonnumber' >Telefoonnumber</label><input id='Telefoonnumber' type='text'></input></p><button>verzenden</button></form>"
@@ -56,7 +56,7 @@ function openNew(){
 
             var oClose=document.getElementById("close");
                 oMask.onclick=oClose.onclick=function(){
-                    document.getElementById("block-faq-open").removeChild(oMask);
+                    document.body.removeChild(oMask);
                     document.getElementById("block-faq-open").removeChild(oPopup);
                 }
         }

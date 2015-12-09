@@ -1,4 +1,6 @@
-#main{
+@import 'global-variable.less';
+
+#main-container{
     >.block-item{
         margin-bottom: 0;
 
@@ -12,7 +14,6 @@
 
             .item-image{
                 margin-left: 20px;
-                float: right;
                 display: block;
             }
 
@@ -21,22 +22,22 @@
 
                 .title{
                     margin:20px 0;
-                    font-family: Calibri;
+                    font-family: @font-family-short;
                     font-size: 30px;
                     font-weight: bold;
-                    color: #ec6707;
+                    color: @color-orange;
                     line-height: 28px;
                 }
 
                 p{
                     padding-right: 381px;
-                    font-family: Calibri;
+                    font-family: @font-family-short;
                     color: #000;
                     line-height: 24px; 
                 }
 
                 span.button{
-                    margin-top: 14px;
+                    margin-top: 17px;
                 }
             }
         }

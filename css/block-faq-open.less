@@ -1,7 +1,9 @@
-.content{
+@import 'global-variable.less';
+
+.main{
 	.introductiontext{
-	    font-family: Myriad Pro;
-	    font-size: 16px;
+	    font-family: @font-family-short;
+	    font-size: 17px;
 	    line-height: 24px;
 	    color:#000;
 	}
@@ -27,27 +29,35 @@
 			padding-bottom: 40px;
 
 			.item{
-				border-bottom: 1px #e8e8e8 solid;
-				color:#464646;
+				border-bottom: @border;
+				color:@color-gray;
 				line-height: 40px;
 
 				a{
+					padding: 0;
 					cursor: pointer;
 
 					.title{
-						padding: 0 28px 0 83px;
+						padding: 0 83px;
 						font-size: 18px;
-						background: url("images/ul-arrow-gray.png") no-repeat 98% center;
+					}
 
-						&:hover{
-							color: #000;
-							background: #f1f1f1 url("images/ul-arrow-black.png") no-repeat 98% center;
+					&:hover{
+						color: #000;
+						background-color: #f1f1f1;
+					
+						.ul-arrow{
+							background: url("images/ul-arrow-black.png") no-repeat;
 						}
+					}
+
+					.ul-arrow{
+						top: 14px;
 					}
 				}
 
-				&:first-child .title{
-					border-top: 1px #e8e8e8 solid;
+				&:first-child a{
+					border-top: @border;
 				}
 
 				.detail{
@@ -71,7 +81,7 @@
 							padding: 7px 11px;
 							text-align: center;
 							background-color: #fff;
-							color: #464646;
+							color: @color-gray;
 							text-decoration: none;
 
 							&:first-child{
@@ -86,6 +96,10 @@
 	}
 }
 .titleopenstyle{
-	color: #ec6707 !important;
-	background: url("images/ul-arrow-orange.png") no-repeat 98% center !important;
+	color: @color-orange !important;
+}
+.iopenstyle{
+	width: 12px !important;
+	height: 8px !important;
+	background: url("images/ul-arrow-orange.png") no-repeat !important;
 }

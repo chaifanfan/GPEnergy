@@ -1,23 +1,35 @@
+@import 'global-variable.less';
+
 .sidebar {
     .title-pos{
-        padding-left:20px;
+        margin-left:20px;
     }
 
     .block-submenu li{
-        border-top:1px #e7e7e7 solid;
-        font-size: 13px;
+        position: relative;
+        border-top: @border;
         line-height: 34px;
 
-        a{
-            padding-left: 20px;
-            display: block;
-            background: url("images/ul-arrow-gray.png") no-repeat 93%;
-            color: #464646;
-            text-decoration: none;
-
-            &:hover{
-                background: url("images/ul-arrow-black.png") no-repeat 93%;
-            }
+        &:hover .ul-arrow{
+            background: url("images/ul-arrow-black.png") no-repeat;
         }
     }
+}
+
+.submenu{
+    position: relative;
+    padding:0 20px;
+    display: block;
+    color: @color-gray;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.ul-arrow{
+    position: absolute;
+    top: 11px;
+    right: 16px;
+    width: 8px;
+    height: 12px;
+    background: url("images/ul-arrow-gray.png") no-repeat;
 }

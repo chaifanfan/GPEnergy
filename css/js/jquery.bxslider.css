@@ -45,16 +45,16 @@
     	transform: translatez(0);
 }
 
-.main-bottom .bx-wrapper .bx-pager,
-.main-bottom .bx-wrapper .bx-controls-auto {
+.extra-box .bx-wrapper .bx-pager,
+.extra-box .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	top: -62px;
 	right: 7px;
 /*	bottom: -30px;
 	width: 100%;*/
 }
-.content .bx-wrapper .bx-pager,
-.content .bx-wrapper .bx-controls-auto {
+.main .bx-wrapper .bx-pager,
+.main .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	top: -62px;
 	right: 7px;
@@ -77,7 +77,7 @@
 
 /* PAGER */
 
-.main-bottom .bx-wrapper .bx-pager {
+.extra-box .bx-wrapper .bx-pager {
 	text-align: center;
 	font-size: .85em;
 	font-family: Arial;
@@ -85,7 +85,7 @@
 	color: #666;
 	padding-top: 5px;
 }
-.content .bx-wrapper .bx-pager {
+.main .bx-wrapper .bx-pager {
 	text-align: center;
 	font-size: .85em;
 	font-family: Arial;
@@ -94,20 +94,20 @@
 	padding-top: 5px;
 }
 
-.main-bottom .bx-wrapper .bx-pager .bx-pager-item,
-.main-bottom .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.extra-box .bx-wrapper .bx-pager .bx-pager-item,
+.extra-box .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
-.content .bx-wrapper .bx-pager .bx-pager-item,
-.content .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+.main .bx-wrapper .bx-pager .bx-pager-item,
+.main .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
 
-.main-bottom .bx-wrapper .bx-pager.bx-default-pager a {
+.extra-box .bx-wrapper .bx-pager.bx-default-pager a {
 	background: #fff;
 	text-indent: -9999px;
 	display: block;
@@ -120,7 +120,7 @@
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
 }
-.content .bx-wrapper .bx-pager.bx-default-pager a {
+.main .bx-wrapper .bx-pager.bx-default-pager a {
 	background: #fff;
 	text-indent: -9999px;
 	display: block;
@@ -134,12 +134,12 @@
 	border-radius: 6px;
 }
 
-.main-bottom .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.main-bottom .bx-wrapper .bx-pager.bx-default-pager a.active {
+.extra-box .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.extra-box .bx-wrapper .bx-pager.bx-default-pager a.active {
 	border:3px #db0c16 solid;
 }
-.content .bx-wrapper .bx-pager.bx-default-pager a:hover,
-.content .bx-wrapper .bx-pager.bx-default-pager a.active {
+.main .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.main .bx-wrapper .bx-pager.bx-default-pager a.active {
 	border:3px #db0c16 solid;
 }
 

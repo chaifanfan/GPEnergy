@@ -1,5 +1,9 @@
-.main-bottom {
+@import 'global-variable.less';
+
+.sidebar {
     .block-tweets{
+        @color-blue:#32ccfe;
+        //-----------------------------------------
     	width: 231px;
         background: #bbeffa;
         font-size: 11px;
@@ -8,19 +12,19 @@
 
         span{
             display: block;
-            color: #32ccfe;
+            color: @color-blue;
         }
 
         .title{
-            margin-bottom: 17px !important;
+            margin:0 0 17px 19px !important;
             // .main-bottom .block-tweets span;
             display: block !important;
-            color: #32ccfe !important;
+            color: @color-blue !important;
         }
 
         .style{
             display: block;
-            color: #32ccfe;
+            color: @color-blue;
         }
 
         .tweets-box{
@@ -38,18 +42,18 @@
             }
 
             a {
-                margin: 7px 0 11px;
+                margin: 7px 0 10px;
                 padding: 0 28px 0 8px;
-                float: right;
                 height: 21px;
-                background: #32ccfe url("images/twitter.png") no-repeat center right;
-                font-family: Calibri;
+                background: @color-blue url("images/twitter.png") no-repeat center right;
+                font-family: @font-family-short;
                 font-size: 14px;
                 font-weight: bold;
                 line-height: 18px;
                 color: #fff;
                 text-decoration: none;
                 cursor: pointer;
+                text-transform: uppercase;
             }
         }
     }

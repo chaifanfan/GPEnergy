@@ -1,4 +1,6 @@
-.content{
+@import 'global-variable.less';
+
+.main{
     .block-item{
         margin-bottom: 20px;
         padding: 20px 0 32px 0;
@@ -6,21 +8,20 @@
         .other-news-item{
             padding: 19px 23px 0 80px;
             display: block;
-            font-size: 13px;
-            color: #464646;
+            color: @color-gray;
             line-height: 18px;
             text-decoration: none;
 
             &:hover{
                 margin-top: -1px;
                 background: #ebeced;
-                opacity: 0.85;
+                opacity: @opacity;
             }
 
             .item{
                 display: block;
-                padding-bottom: 19px;
-                border-bottom: 1px #e8e8e8 solid;
+                padding-bottom: 3px;
+                border-bottom: @border;
 
                 .item-image{
                     margin-right: 20px;
@@ -39,7 +40,7 @@
                         }
 
                         &.button{
-                            margin-top: -22px;
+                            margin-top: -34px;
                         }
                     }
 
@@ -59,7 +60,7 @@
                 text-decoration: none;  
 
                 &.pager-button{
-                    font-family: Calibri;
+                    font-family: @font-family-short;
                     font-size: 14px;
                     color: #d1d1d1;
 
@@ -83,12 +84,12 @@
                     color: #fff;
 
                     &:hover{
-                        background: #ec6707;
+                        background: @color-orange;
                     }
 
                     &.current{
                         //.content .block-item .pager a.pager-num:hover;
-                        background: #ec6707;
+                        background: @color-orange;
                     }
                 }
             }
@@ -97,10 +98,10 @@
 }
 
 .block-item a .item-detail span.button{
-    padding: 3px;
+    padding: 2px 6px 3px;
     float: right;
-    background: #ec6707;
-    font-family: Calibri;
+    background: @color-orange;
+    font-family: @font-family-short;
     font-weight: bold;
     color: #fff;
     line-height: 14px;

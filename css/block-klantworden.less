@@ -1,9 +1,11 @@
-.content{
+@import 'global-variable.less';
+
+.main{
     .block-klantworden{
+        position: relative;
         margin-bottom: 12px;
         padding: 30px 28px 23px 83px;
-        background: #fff url("images/spinarrow.png") no-repeat 2.8% 2%;
-        color: #464646;
+        color: @color-gray;
         line-height: 18px;
 
         .klantworden-form{
@@ -11,13 +13,13 @@
                 margin:37px 0 5px;
                 font-size: 16px;
                 font-weight: bold;
-                color:#ec6707;
+                color:@color-orange;
                 line-height: 45px;
             }
 
             p{
                 a{
-                    color: #ec6707;
+                    color: @color-orange;
 
                     &:hover{
                         text-decoration: none;
@@ -39,9 +41,10 @@
                             width: 11px;
                             height: 15px;
                             border-radius: 8px;
-                            background-color: #ec6707;
+                            background-color: @color-orange;
                             color: #fff;
                             text-decoration: none;
+                            vertical-align: middle;
                         }
                     }
                 }

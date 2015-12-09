@@ -1,4 +1,6 @@
-.content{
+@import 'global-variable.less';
+
+.main{
     p{
         margin-bottom: 12px;
 
@@ -68,10 +70,10 @@
     button{
         float: right;
         padding: 0 28px 5px 0;
-        font-family: Calibri;
+        font-family: @font-family-short;
         font-size: 24px;
         font-weight: bold;
-        color: #ec6707;
+        color: @color-orange;
         line-height: 28px;
         background: url('images/bigbutton-arrow-red.png') no-repeat right;
         cursor: pointer;
@@ -85,7 +87,7 @@
         position: relative;
         margin-bottom: 12px;
         padding: 30px 20px 22px 78px;
-        color: #464646;
+        color: @color-gray;
         line-height: 18px;
 
         .introductiontext{

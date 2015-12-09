@@ -13,7 +13,7 @@
 
 body {
 	background: url("images/bg1.png") repeat scroll left top;
-	font: 12px/1.5 Arial, Helvetica, sans-serif;
+	font: 13px/1.5 Arial, Helvetica, sans-serif;
 }
 
 .global-width {
@@ -21,7 +21,7 @@ body {
 	width: 960px;
 }
 
-.clearfix:after{
+/*.clearfix:after{
 	content:".";
 	display:block;
 	height:0;
@@ -42,4 +42,47 @@ body {
 .clearfix{
 	overflow:hidden;
 	_zoom:1;
-}*/
+}* /
+*/
+
+.hide {
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* Clearfix */
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* for IE6 */
+
+*html .clearfix {
+    zoom: 1;
+}
+
+
+/* for IE7 */
+
+*+html .clearfix {
+    zoom: 1;
+}

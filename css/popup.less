@@ -1,3 +1,5 @@
+@import 'global-variable.less';
+
 #popup{
     position: fixed;
     left: 30%;
@@ -8,7 +10,8 @@
     width: 405px;
     height: 330px;
     background: #fff;
-    color: #464646;
+    color: @color-gray;
+    z-index: 2;
 
     #close{
         position: absolute;
@@ -16,7 +19,7 @@
         right: 0;
         padding: 2px 6px;
         background: #d2d3d5;
-        font-family: Calibri;
+        font-family: @font-family-short;
         font-weight: bold;
         font-size: 14px;
         line-height: 14px;

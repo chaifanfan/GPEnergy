@@ -1,3 +1,5 @@
+@import 'global-variable.less';
+
 .sidebar {
     .block-button{
         margin-bottom: 22px;
@@ -6,9 +8,9 @@
         a{
             padding: 21px 20px 20px;
             display: block;
-            background: #ec6707 url("images/bigbutton-arrow-white.png") no-repeat 91%;
+            background: @color-orange url("images/bigbutton-arrow-white.png") no-repeat 91%;
             color: #fff;
-            font-family: Calibri;
+            font-family: @font-family-short;
             font-weight: bold;
             font-size: 24px;
             line-height: 20px;

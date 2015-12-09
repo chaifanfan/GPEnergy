@@ -1,4 +1,6 @@
-.content {
+@import 'global-variable.less';
+
+.main {
     .block.teaser-box{
     	margin-left: 10px;
         float: left;
@@ -6,12 +8,10 @@
 
         a{
             @color1:#96c11f;
-            @color2:#ec6707;
             @color3:#bd2c2e;
             //-------------------------------------
             display: block;
             padding: 15px 14px 14px 19px;
-            font-size: 13px;
             color: #878787;
             line-height: 18px;
             text-decoration: none;
@@ -49,7 +49,7 @@
             }
 
             .style{
-                font-family: Calibri;
+                font-family: @font-family-short;
                 font-weight: bold;
                 line-height: 26px;
             }
@@ -63,11 +63,11 @@
             }
 
             .color2{
-                color: @color2;
+                color: @color-orange;
             }
 
             .button.color2{
-                background:  @color2;
+                background:  @color-orange;
             }
 
             .color3{
@@ -81,6 +81,7 @@
 
             .title{
                 font-size: 21px;
+                text-transform: uppercase;
             }
 
             .price{
@@ -95,9 +96,10 @@
                 text-align: center;
                 font-size: 14px;
                 line-height: 14px;
+                text-transform: uppercase;
 
                 &:hover{
-                    opacity: 0.85;
+                    opacity: @opacity;
                 }
             }
         }
