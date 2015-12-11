@@ -15,25 +15,51 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script>
 		$(function() {
-			//icoon img
-			// $('.control-list li a').hover(function(){
-			// 	$(this).find('img').attr('src','images/icoon-white.png');
-			// },function(){
-			// 	$(this).find('img').attr('src','images/icoon-gray.png');
-			// });
-
 			//slider
-	   		$('.pic-list').bxSlider({
+	   		var slider = $('.pic-list').bxSlider({
 	   			pagerCustom:".control-list",
-	   			onSlideAfter:function() {
-	   				$('.control-list li a').hover(function(){
-						$(this).find('img').attr('src','images/icoon-white.png');
-					},function(){
-						$(this).find('img').attr('src','images/icoon-gray.png');
-					});
+	   			onsliderLoad: function(curIndex){
+	   				var currA = $('.control-list li a').eq(curIndex);
+	   				currA.find('img').attr('src','images/icoon-white.png');
+	   			},
+	   			onSlideNext:function($slideElement,oldIndex,newIndex){//继续自动滑动时有icon效果
+	   				var $As = $('.control-list li a');
+	   				var prevA = $As.eq(oldIndex);
+	   				var currA = $As.eq(newIndex);
+	   				prevA.find('img').attr('src','images/icoon-gray.png');
+	   				currA.find('img').attr('src','images/icoon-white.png');
 	   			}
 	   		});
+	   		var $lis = $('.control-list li');
+	   		$lis.on('click',function(){//click切换
+	   			var _this = $(this);
+	   			var slideIndex = _this.index();
+	   			$lis.each(function(idx,item){
+	   				$(item).find('img').attr('src','images/icoon-gray.png');
+	   			});
+	   			slider.goToSlide(slideIndex);
+	   			_this.find('img').attr('src','images/icoon-white.png');
+	   			return false;//点击后继续自动滑动
+	   		});
+	   		$lis.hover(function(){//hover切换
+	   			var _this = $(this);
+	   			var slideIndex = _this.index();
+	   			$lis.each(function(idx,item){
+	   				$(item).find('img').attr('src','images/icoon-gray.png');
+	   			});
+	   			_this.find('img').attr('src','images/icoon-white.png');
+	   			slider.goToSlide(slideIndex);
+	   		}, function(){
+	   			var currIndex = slider.getCurrentSlide();
+	   			var _this = $(this);
+	   			if(_this.index() == currIndex){
+	   				return false;
+	   			}
+	   			_this.find('img').attr('src','images/icoon-gray.png');
+	   		});
 
+
+	   		//newsslider
 	   		$('.newsslidercontrol').bxSlider();
 		});
 	</script>
@@ -85,7 +111,7 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			<div class="slider-control clearfix">
 					<ul class="control-list">
 						<li>
-							<a href="" class="active" data-slide-index="x">
+							<a href="" data-slide-index="x">
 								<img src="images/icoon-gray.png" alt="icon-circle" />
 								<h4 class="title">VAN AFVAL NAAR ENERGIE</h4>
 								<span>Duurzaam</span>
@@ -150,6 +176,33 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 					</a>
 				</div>
 			</div>
+			<!-- extra-box -->
+			<div class="extra-box">
+				<div class="block block-faq">
+					<h4 class="title">VEEL GESTELDE VRAGEN</h4>
+					<a href="faq.html" class="right">Alle vragen</a>
+					<ul>
+						<li><a href="faq.html" class="submenu">Wat is de precieze werkwijze van GP Groot Energie?</a><i class="ul-arrow"></i></li>
+						<li><a href="faq.html" class="submenu">Wat zijn mijn voordelen als ik overstap naar GP Groot Energie?</a><i class="ul-arrow"></i></li>
+						<li><a href="faq.html" class="submenu">Kan ik makkelijk overstappen naar GP Groot Energie?</a><i class="ul-arrow"></i></li>
+						<li><a href="faq.html" class="submenu">Hoe werkt de MVO scan?</a><i class="ul-arrow"></i></li>
+						<li><a href="faq.html" class="submenu">Hoe kan ik snel klimmen op de CO2 prestatieladder?</a><i class="ul-arrow"></i></li>
+						<li><a href="faq.html" class="submenu">Wat houdt 100% groene stroom in?</a><i class="ul-arrow"></i></li>
+					</ul>
+				</div>
+				<div class="block block-newsslider">
+					<h4 class="title">ACTUEEL</h4>
+					<a href="" class="clearfix">
+						<ul class="newsslidercontrol">
+							<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+							<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+							<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+							<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
+						</ul>
+					</a>
+				</div>
+			</div>
+			<!-- / extra-box -->
 		</div>
 		<!-- / main -->
 		<!-- sidebar -->
@@ -231,33 +284,6 @@ http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 			</div>
 		</div>
 		<!-- / sidebar -->
-		<!-- extra-box -->
-		<div class="extra-box">
-			<div class="block block-faq">
-				<h4 class="title">VEEL GESTELDE VRAGEN</h4>
-				<a href="faq.html" class="right">Alle vragen</a>
-				<ul>
-					<li><a href="faq.html" class="submenu">Wat is de precieze werkwijze van GP Groot Energie?</a><i class="ul-arrow"></i></li>
-					<li><a href="faq.html" class="submenu">Wat zijn mijn voordelen als ik overstap naar GP Groot Energie?</a><i class="ul-arrow"></i></li>
-					<li><a href="faq.html" class="submenu">Kan ik makkelijk overstappen naar GP Groot Energie?</a><i class="ul-arrow"></i></li>
-					<li><a href="faq.html" class="submenu">Hoe werkt de MVO scan?</a><i class="ul-arrow"></i></li>
-					<li><a href="faq.html" class="submenu">Hoe kan ik snel klimmen op de CO2 prestatieladder?</a><i class="ul-arrow"></i></li>
-					<li><a href="faq.html" class="submenu">Wat houdt 100% groene stroom in?</a><i class="ul-arrow"></i></li>
-				</ul>
-			</div>
-			<div class="block block-newsslider">
-				<h4 class="title">ACTUEEL</h4>
-				<a href="" class="clearfix">
-					<ul class="newsslidercontrol">
-						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
-						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
-						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
-						<li class="news-headers">GP Groot Energie officieel van start na ondertekening overeenkomst HVC Energie.</li>
-					</ul>
-				</a>
-			</div>
-		</div>
-		<!-- / extra-box -->
 	</div>
 	<!-- / main-container -->
 	<!-- footer -->
