@@ -1,53 +1,70 @@
 @import 'global-variable.less';
 
 .main {
-    .block-slider .control-list li {
-        float: left;
-        width: 33.333333%;
+    .block-slider{
+        .pic-list{
+            position: relative;
+            height: 317px;
 
-        &:first-child a{
-            margin-left: 0px;
+            li{
+                position: absolute;
+                top: 0;
+                left: 0;
+                line-height: 0;
+            }
         }
 
-        a {
-            display: inline-block;
-            margin-left: 1px;
-            padding: 16px 0 17px 12px;
-            background: #fff;
-            font-size: 14px;
-            font-weight: bold;
-            color: #1c1c1c;
-            text-decoration: none;
+        .control-list {
+            overflow: hidden;
 
-            &:hover{
-                background: #dddbdb;
-            }
-
-            &.active{
-                // .content .block-slider .control-list li a:hover;
-                background: #dddbdb;
-            }
-
-            img{
+            li {
                 float: left;
+                width: 33.333333%;
+
+                &:first-child a{
+                    margin-left: 0px;
+                }
+
+                a {
+                    display: inline-block;
+                    margin-left: 1px;
+                    padding: 16px 0 17px 12px;
+                    background: #fff;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #1c1c1c;
+                    text-decoration: none;
+
+                    // &:hover{
+                    //     background: #dddbdb;
+                    // }
+
+                    &.active{
+                        // .content .block-slider .control-list li a:hover;
+                        background: #dddbdb;
+                    }
+
+                    img{
+                        float: left;
+                    }
+
+                    .title {
+                        float: left;
+                        color: #878787;
+                        font-family: @font-family-short;
+                        font-size: 14px;
+                        font-weight: bold;
+                        // .content .block-slider .control-list li a span;
+                        margin-left: 12px;
+                        text-transform: uppercase;
+
+                    }
+
+                    span{
+                        margin-left: 12px;
+                    }
+                }
             }
-
-            .title {
-                float: left;
-                color: #878787;
-                font-family: @font-family-short;
-                font-size: 14px;
-                font-weight: bold;
-                // .content .block-slider .control-list li a span;
-                margin-left: 12px;
-                text-transform: uppercase;
-
-            }
-
-            span{
-                margin-left: 12px;
-            }
-
         }
     }
 }

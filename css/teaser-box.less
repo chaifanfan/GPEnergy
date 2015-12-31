@@ -1,111 +1,115 @@
 @import 'global-variable.less';
 
 .main {
-    .block.teaser-box{
-    	margin-left: 10px;
-        float: left;
-        width: 233px;
+    .teaser{
+        overflow: hidden;
 
-        a{
-            @color1:#96c11f;
-            @color3:#bd2c2e;
-            //-------------------------------------
-            display: block;
-            padding: 15px 14px 14px 19px;
-            color: #878787;
-            line-height: 18px;
-            text-decoration: none;
+        .block.teaser-box{
+        	margin-left: 10px;
+            float: left;
+            width: 233px;
 
-            &:hover{
-            border: 2px #dcddde solid;
-            padding: 13px 12px 12px 17px;
-
-            }
-
-            > span{
+            a{
+                @color1:#96c11f;
+                @color3:#bd2c2e;
+                //-------------------------------------
                 display: block;
-            }
-
-            .brief p{
-                margin-top: 9px;
-
-                &.spe{
-                    margin-top: 18px;
-                }
-            }
-
-            .detail{
-                margin-top: 15px;
-                float: right;
-                width: 102px;
-
-                &.third{
-                    margin-top: 0;
-                }
-
-                span{
-                    display: block;
-                }
-            }
-
-            .style{
-                font-family: @font-family-short;
-                font-weight: bold;
-                line-height: 26px;
-            }
-
-            .color1{
-                color: @color1;
-            }
-
-            .button.color1{
-                background:  @color1;
-            }
-
-            .color2{
-                color: @color-orange;
-            }
-
-            .button.color2{
-                background:  @color-orange;
-            }
-
-            .color3{
-                color: @color3;
-            }
-
-            .button.color3{
-                margin-top: 6px;
-                background:  @color3;
-            }
-
-            .title{
-                font-size: 21px;
-                text-transform: uppercase;
-            }
-
-            .price{
-                margin-top: 3px;
-                font-size: 36px;
-            }
-
-            .button{
-                margin-top: 17px;
-                padding:2px 0 4px;
-                color: #fff;
-                text-align: center;
-                font-size: 14px;
-                line-height: 14px;
-                text-transform: uppercase;
+                padding: 15px 14px 14px 19px;
+                color: #878787;
+                line-height: 18px;
+                text-decoration: none;
 
                 &:hover{
-                    opacity: @opacity;
+                border: 2px #dcddde solid;
+                padding: 13px 12px 12px 17px;
+
+                }
+
+                > span{
+                    display: block;
+                }
+
+                .brief p{
+                    margin-top: 9px;
+
+                    &.spe{
+                        margin-top: 18px;
+                    }
+                }
+
+                .detail{
+                    margin-top: 15px;
+                    float: right;
+                    width: 102px;
+
+                    &.third{
+                        margin-top: 0;
+                    }
+
+                    span{
+                        display: block;
+                    }
+                }
+
+                .style{
+                    font-family: @font-family-short;
+                    font-weight: bold;
+                    line-height: 26px;
+                }
+
+                .color1{
+                    color: @color1;
+                }
+
+                .button.color1{
+                    background:  @color1;
+                }
+
+                .color2{
+                    color: @color-orange;
+                }
+
+                .button.color2{
+                    background:  @color-orange;
+                }
+
+                .color3{
+                    color: @color3;
+                }
+
+                .button.color3{
+                    margin-top: 6px;
+                    background:  @color3;
+                }
+
+                .title{
+                    font-size: 21px;
+                    text-transform: uppercase;
+                }
+
+                .price{
+                    margin-top: 3px;
+                    font-size: 36px;
+                }
+
+                .button{
+                    margin-top: 17px;
+                    padding:2px 0 4px;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        opacity: @opacity;
+                    }
                 }
             }
-        }
 
-        &:first-child{
-            margin-left: 0;
+            &:first-child{
+                margin-left: 0;
+            }
         }
     }
 }

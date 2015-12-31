@@ -16,6 +16,42 @@
             left: 19px;
         }
 
+        .newsslider-list{
+            position: relative;
+            height: 140px;
+
+            li{
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .newslider-pager{
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            overflow: hidden;
+
+            li{
+                float: left;
+                background: #fff;
+                text-indent: -9999px;
+                width: 5px;
+                height: 5px;
+                margin-left: 5px;
+                border:3px #dbd9d9 solid;
+                outline: 0;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                border-radius: 6px;
+
+                &.active{
+                    border: 3px #db0c16 solid;
+                }
+            }
+        }
+
         > a{
             position: relative;
             padding: 77px 36px 55px 17px;
